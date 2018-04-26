@@ -1,8 +1,15 @@
-/* global $ */
-
-console.log('hi');
-
-$('h1').click(function(){
-    $('h1').css('color', 'green');
-    $('h1').text('Ready to Code');
+$(document).ready(function() {
+    $("#red").click(search);
 });
+
+function search() {
+    $.ajax({
+        url: "https://www.googleapis.com/books/v1/",
+        method: "GET",
+        success: function(query) {
+            console.log(query);
+            // $("#result").html(query);
+        }
+        
+    });
+}

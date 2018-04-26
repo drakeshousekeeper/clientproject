@@ -1,3 +1,16 @@
-h1 {
-  color: fuchsia;
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    width: 40em;
+    text-align: center;
+}
+#blue{
+    font-size:20px;
+}
+
+.black{
+    float: right;
+     margin-left: auto;
+    margin-right: auto;
+    width: 10em;
 }
