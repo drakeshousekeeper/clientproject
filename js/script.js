@@ -1,15 +1,14 @@
 $(document).ready(function() {
-    $("#red").click(search);
+    $("#searchButton").click(search);
 });
 
 function search() {
+    var userSearch = $("#userInput").val();
     $.ajax({
-        url: "https://www.googleapis.com/books/v1/",
+        url: "https://www.googleapis.com/books/v1/volumes?q=" + userSearch,
         method: "GET",
         success: function(query) {
-            console.log(query);
-            // $("#result").html(query);
+            $("#result").html(query);
         }
-        
     });
 }
