@@ -1,24 +1,40 @@
-.about {
+@import url('https://fonts.googleapis.com/css?family=Courgette|Ultra|Raleway');
+
+
+h1{
+    font-family: 'Ultra', serif;
+}
+
+h2{
+    font-family: 'Courgette', cursive;
+}
+
+p{
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.col-sm-4{
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
-    text-align: center;
 }
 
-#blue {
-    font-size: 20px;
-}
-
-.black {
-    float: right;
+.col-lg-12{
+    padding: 20px 150px 20px 150px;
 }
 
 body{
-    background-color:skyblue;
+    background-color: #C70039;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .books{
     width: 75%;
     height: 500px;
-    margin: auto;
 }
+
+/*.container{*/
+/*    background-color: ;*/
+/*}*/
